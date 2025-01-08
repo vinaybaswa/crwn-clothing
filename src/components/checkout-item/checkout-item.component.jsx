@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import {
   addItemToCart,
   removeItemFromCart,
-  deleteItemFromCart,
+  clearItemFromCart,
 } from "../../store/cart/cart.action";
 import { selectCartItems } from "../../store/cart/cart.selector";
 
@@ -29,7 +29,7 @@ const CheckoutItem = ({ cartItem }) => {
     dispatch(removeItemFromCart(cartItems, cartItem));
   
   const deleteItemHandler = () =>
-    dispatch(deleteItemFromCart(cartItems, cartItem));
+    dispatch(clearItemFromCart(cartItems, cartItem));
 
   return (
     <CheckoutItemContainer>
