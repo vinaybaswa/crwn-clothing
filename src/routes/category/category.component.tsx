@@ -30,7 +30,7 @@ const Category = () => {
 
   return (
     <Fragment>
-      <CategoryTitle>{category.toUpperCase()}</CategoryTitle>
+      <CategoryTitle>{category?.toUpperCase()}</CategoryTitle>
       {isLoading ? (
         <Spinner />
       ) : (
