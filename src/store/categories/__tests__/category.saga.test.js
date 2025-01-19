@@ -9,9 +9,9 @@ import {
 
 import { CATEGORY_ACTION_TYPES } from "../category.types";
 
-import { TextEncoder } from 'util';
+// import { TextEncoder } from 'util';
 
-Object.assign(global, { TextDecoder });
+// Object.assign(global, { TextDecoder });
 
 describe("category saga tests", () => {
   test("categoriesSaga", () => {
